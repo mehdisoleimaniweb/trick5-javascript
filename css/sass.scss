@@ -1,0 +1,52 @@
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #58ddaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: white;
+    }
+    .sec{
+        width: 700px;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        .fig{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s linear;
+            img{
+                width: 700px;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+        #right,#left{
+            position: absolute;
+            top: 50%;
+            color: white;
+            font-size: 40px;
+            background-color: black;
+            transition: .5s;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(112, 112, 112);
+                color: black;
+            }
+        }
+        #right{
+            right: 5%;
+        }
+        #left{
+            left: -100px;
+        }
+    }
+}
